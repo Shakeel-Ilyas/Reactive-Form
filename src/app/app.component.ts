@@ -20,7 +20,7 @@ import { CustomValidator } from './Validators/noSpaceAllowed.validator';
 export class AppComponent implements OnInit {
   title = 'angular-reactive-form';
   formStatus: string = '';
-  formdata: any = {};
+  formdata: any;
 
   reactiveForm: FormGroup;
 
