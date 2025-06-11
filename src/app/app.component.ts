@@ -7,7 +7,6 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
 import { CustomValidator } from './Validators/noSpaceAllowed.validator';
 
 @Component({
@@ -52,23 +51,6 @@ export class AppComponent implements OnInit {
       experience: new FormArray([]),
     });
 
-    // this.reactiveForm.get('firstname').valueChanges.subscribe((value)=>{
-    //   console.log(value)
-    // })
-
-    // this.reactiveForm.valueChanges.subscribe((value)=>{
-    //   console.log(value);
-    // })
-
-    // this.reactiveForm.get('username').statusChanges.subscribe((status)=>{
-    //   console.log(status)
-    // })
-
-    // this.reactiveForm.statusChanges.subscribe((status)=>{
-
-    //   console.log(status)
-    //   this.formStatus = status;
-    // })
   }
 
   OnFormSubmitted() {
@@ -102,9 +84,6 @@ export class AppComponent implements OnInit {
       });
     } else {
       this.showFormSubmittedOrNotSubmitted = false;
-      // setTimeout(() => {
-      //   this.showFormSubmittedOrNotSubmitted = '';
-      // }, 5000);
 
       this.reactiveForm.get('firstname').markAsTouched();
       this.reactiveForm.get('lastname').markAsTouched();
@@ -172,27 +151,6 @@ export class AppComponent implements OnInit {
 
     username = username.toLowerCase();
 
-    // console.log(username);
-
-    // this.reactiveForm.setValue({
-    //   firstname: this.reactiveForm.get('firstname').value,
-    //   lastname: this.reactiveForm.get('lastname').value,
-    //   email: this.reactiveForm.get('email').value,
-    //   username: username,
-    //   dob: this.reactiveForm.get('dob').value,
-    //   gender: this.reactiveForm.get('gender').value,
-    //   address: {
-    //     street: this.reactiveForm.get('address.street').value,
-    //     country: this.reactiveForm.get('address.country').value,
-    //     city: this.reactiveForm.get('address.city').value,
-    //     region: this.reactiveForm.get('address.region').value,
-    //     postal: this.reactiveForm.get('address.postal').value
-    //   },
-    //   skills: this.reactiveForm.get('skills').value,
-    //   experience: this.reactiveForm.get('experience').value
-    // })
-
-    // this.reactiveForm.get('username').setValue(username);
 
     this.reactiveForm.patchValue({
       username: username,

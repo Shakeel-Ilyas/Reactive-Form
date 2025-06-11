@@ -1,5 +1,4 @@
 import { AbstractControl, FormControl } from "@angular/forms";
-import { Observable } from "rxjs";
 
 
 export class CustomValidator{
