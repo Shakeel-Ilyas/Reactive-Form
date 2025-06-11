@@ -1,8 +1,8 @@
-# Project Name "angular-reactive-form"
+# Project Name "reactive-form"
 
 This Angular practice project uses Reactive Forms with built-in and custom validators, leveraging properties like invalid, touched, and dirty. On submission, if required fields are empty, it blocks submission, highlights required fields, and shows errors. On success, it displays a success message and shows user details on another section.
 
-# AngularReactiveForm
+# ReactiveForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 

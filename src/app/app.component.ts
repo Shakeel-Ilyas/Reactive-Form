@@ -50,13 +50,10 @@ export class AppComponent implements OnInit {
       skills: new FormArray([new FormControl(null, Validators.required)]),
       experience: new FormArray([]),
     });
-
   }
 
   OnFormSubmitted() {
-
     if (this.reactiveForm.valid) {
-      
       this.formdata = this.reactiveForm.value;
 
       this.showFormSubmittedOrNotSubmitted = true;
@@ -150,7 +147,6 @@ export class AppComponent implements OnInit {
     username += datetime.getFullYear();
 
     username = username.toLowerCase();
-
 
     this.reactiveForm.patchValue({
       username: username,
